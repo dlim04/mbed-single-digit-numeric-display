@@ -4,8 +4,8 @@
 
 #include "SingleDigitNumericDisplay.h"
 
-SingleDigitNumericDisplay::SingleDigitNumericDisplay(PinName pinA, PinName pinB, PinName pinC, PinName pinD, PinName pinE, PinName pinF,
-                                                     PinName pinG, PinName pinDP2) {
+SingleDigitNumericDisplay::SingleDigitNumericDisplay(PinName pinA, PinName pinB, PinName pinC, PinName pinD,
+                                                     PinName pinE, PinName pinF, PinName pinG, PinName pinDP2) {
     this->ledA = new DigitalOut(pinA);
     this->ledB = new DigitalOut(pinB);
     this->ledC = new DigitalOut(pinC);
