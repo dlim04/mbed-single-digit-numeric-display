@@ -16,14 +16,14 @@ class SingleDigitNumericDisplay {
 public:
     /**
      * Constructor for the SingleDigitNumericDisplay object connected to the specified pins.
-     * @param pinA - Pin that led A is connected to on the mbed board
-     * @param pinB - Pin that led B is connected to on the mbed board
-     * @param pinC - Pin that led C is connected to on the mbed board
-     * @param pinD - Pin that led D is connected to on the mbed board
-     * @param pinE - Pin that led E is connected to on the mbed board
-     * @param pinF - Pin that led F is connected to on the mbed board
-     * @param pinG - Pin that led G is connected to on the mbed board
-     * @param pinDP2 - Pin that the decimal point 2 led is connected to on the mbed board
+     * @param pinA - Pin that LED A is connected to on the mbed board
+     * @param pinB - Pin that LED B is connected to on the mbed board
+     * @param pinC - Pin that LED C is connected to on the mbed board
+     * @param pinD - Pin that LED D is connected to on the mbed board
+     * @param pinE - Pin that LED E is connected to on the mbed board
+     * @param pinF - Pin that LED F is connected to on the mbed board
+     * @param pinG - Pin that LED G is connected to on the mbed board
+     * @param pinDP2 - Pin that the decimal point 2 LED is connected to on the mbed board
      */
     SingleDigitNumericDisplay(PinName pinA, PinName pinB, PinName pinC, PinName pinD, PinName pinE, PinName pinF,
                               PinName pinG, PinName pinDP2);
