@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Mbed compile files
+BUILD
+.mbed
+mbed-os
+
+# CLion Files
+.idea/
