@@ -1,4 +1,4 @@
-# Mbed Single Digit Numeric Display
+# mbed-single-digit-numeric-display
 
 ## About This Repository
 This class was written to enable easy interface with a seven segment display from an [Mbed](https://os.mbed.com/ "Mbed Homepage") microcontroller. 
