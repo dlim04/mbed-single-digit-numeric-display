@@ -15,11 +15,11 @@ SingleDigitNumericDisplay::SingleDigitNumericDisplay(PinName pinA, PinName pinB,
     ledG = new DigitalOut(pinG);
     ledDP2 = new DigitalOut(pinDP2);
 
-    clearDisplay();
+    clear();
 }
 
-void SingleDigitNumericDisplay::setDisplay(int number) {
-    clearDisplay();
+void SingleDigitNumericDisplay::write(int number) {
+    clear();
     switch (number) {
         case 0:
             ledA->write(0);
@@ -95,7 +95,7 @@ void SingleDigitNumericDisplay::setDisplay(int number) {
     }
 }
 
-void SingleDigitNumericDisplay::clearDisplay() {
+void SingleDigitNumericDisplay::clear() {
     ledA->write(1);
     ledB->write(1);
     ledC->write(1);

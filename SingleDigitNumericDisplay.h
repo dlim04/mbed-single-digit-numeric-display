@@ -33,12 +33,12 @@ public:
      * blank.
      * @param number - The number to be shown on the display
      */
-    void setDisplay(int number);
+    void write(int number);
 
     /**
      * Clear the display so that nothing is shown
      */
-    void clearDisplay();
+    void clear();
 
 private:
     /* Digital outputs to be used to setting the state of pins on the display */
