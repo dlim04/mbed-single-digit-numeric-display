@@ -26,14 +26,21 @@ public:
      * @param pinDP2 - Pin that the decimal point 2 LED is connected to on the mbed board
      */
     SingleDigitNumericDisplay(PinName pinA, PinName pinB, PinName pinC, PinName pinD, PinName pinE, PinName pinF,
-                              PinName pinG, PinName pinDP2);
+                              PinName pinG, PinName pinDP2, bool polarity = true);
 
     /**
-     * Set the display output to the specified integer. The integer should be between 0-9 or the display will display
-     * blank.
+     * Set the display output to the specified integer. The integer should be between 0-9 otherwise the display will
+     * show 'E'.
      * @param number - The number to be shown on the display
      */
     void write(int number);
+
+    /**
+     * Set the display output to the specified character. The character should be an number between 0-9, '#' or '*'
+     * otherwise the display will show 'E'
+     * @param character - The character to be shown on the display
+     */
+    void write(char character);
 
     /**
      * Clear the display so that nothing is shown
@@ -41,8 +48,8 @@ public:
     void clear();
 
 private:
-    /* Digital outputs to be used to setting the state of pins on the display */
-    DigitalOut *ledA, *ledB, *ledC, *ledD, *ledE, *ledF, *ledG, *ledDP2;
+    BusOut leds;
+    bool polarity;
 };
 
 
