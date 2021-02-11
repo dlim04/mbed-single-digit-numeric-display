@@ -24,6 +24,8 @@ public:
      * @param pinF - Pin that LED F is connected to on the mbed board
      * @param pinG - Pin that LED G is connected to on the mbed board
      * @param pinDP2 - Pin that the decimal point 2 LED is connected to on the mbed board
+     * @param polarity - Whether the display is common anode or common cathode (true for common anode, false for common
+     *                   cathode)
      */
     SingleDigitNumericDisplay(PinName pinA, PinName pinB, PinName pinC, PinName pinD, PinName pinE, PinName pinF,
                               PinName pinG, PinName pinDP2, bool polarity = true);
